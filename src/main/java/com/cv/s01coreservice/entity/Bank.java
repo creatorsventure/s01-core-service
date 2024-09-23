@@ -16,7 +16,6 @@ import java.util.Objects;
 @Getter
 @Setter
 @RequiredArgsConstructor
-@NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
 @ToString(callSuper = true)

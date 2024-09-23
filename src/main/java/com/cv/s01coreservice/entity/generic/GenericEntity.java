@@ -20,7 +20,6 @@ import java.util.Objects;
 @Setter
 @ToString
 @RequiredArgsConstructor
-@NoArgsConstructor
 @SuperBuilder
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
@@ -45,10 +44,12 @@ public abstract class GenericEntity {
 
     @CreatedDate
     @Column(nullable = false, updatable = false)
+    @Builder.Default
     private LocalDateTime createdAt = LocalDateTime.now();
 
     @LastModifiedDate
     @Column
+    @Builder.Default
     private LocalDateTime modifiedAt = LocalDateTime.now();
 
     @CreatedBy
