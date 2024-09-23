@@ -15,8 +15,6 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 public class UserDto extends GenericDto implements Serializable {
 
-    private static final long serialVersionUID = -511269946896947520L;
-
     @NotNull(message = "app.error.msg-2")
     private String email;
 

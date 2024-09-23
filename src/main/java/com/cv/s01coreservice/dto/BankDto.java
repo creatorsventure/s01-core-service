@@ -15,8 +15,6 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 public class BankDto extends GenericDto implements Serializable {
 
-    private static final long serialVersionUID = 8248939480666261962L;
-
     @NotNull(message = "app.error.msg-2")
     private String bankCode;
 

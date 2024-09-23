@@ -11,15 +11,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class APIResponseDto implements Serializable {
 
-	/**
-	 * @author ram_r [entity-service - Mar 31, 2024]
-	 */
-
-	private static final long serialVersionUID = 1L;
-
-	private boolean status;
-	private String message;
-	private Integer type;
-	private Object object;
+    private boolean status;
+    private String message;
+    private Integer type;
+    private Object object;
 
 }
