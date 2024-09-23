@@ -23,6 +23,8 @@ import java.util.Objects;
 @Entity
 public class UserDetail extends GenericEntity implements Serializable {
 
+    @Serial
+    private static final long serialVersionUID = 3206343017993143643L;
     @NotBlank(message = "app.error.msg-1")
     @NotNull(message = "app.error.msg-2")
     @Column(unique = true)

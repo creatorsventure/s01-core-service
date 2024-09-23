@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -16,6 +17,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public abstract class GenericDto implements Serializable {
 
+    @Serial
+    private static final long serialVersionUID = -5839134238162376331L;
     private String id;
     @NotBlank(message = "app.error.msg-1")
     @NotNull(message = "app.error.msg-2")

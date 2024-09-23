@@ -1,5 +1,6 @@
 package com.cv.s01coreservice.dto;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 
@@ -12,6 +13,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PaginationDto implements Serializable {
 
+    @Serial
+    private static final long serialVersionUID = 4622161010440082224L;
     private int pageIndex;
     private int pageSize;
     private String sortField;

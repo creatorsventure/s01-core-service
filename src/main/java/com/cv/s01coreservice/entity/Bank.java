@@ -9,6 +9,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.proxy.HibernateProxy;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -23,6 +24,8 @@ import java.util.Objects;
 public class Bank extends GenericEntity implements Serializable {
 
 
+    @Serial
+    private static final long serialVersionUID = -2570794711324336372L;
     @NotBlank(message = "app.error.msg-1")
     @NotNull(message = "app.error.msg-2")
     @Column(unique = true)
