@@ -37,10 +37,6 @@
             <name>${project.name} Maven Packages</name>
             <url>https://maven.pkg.github.com/creatorsventure/s01-core-service</url>
         </repository>
-        <snapshotRepository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/creatorsventure/s01-core-service</url>
-        </snapshotRepository>
     </distributionManagement>
     <dependencies>
         <dependency>
@@ -75,22 +71,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
