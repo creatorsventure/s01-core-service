@@ -28,6 +28,8 @@
     </scm>
     <properties>
         <java.version>21</java.version>
+        <maven.build.timestamp.format>ddMMyyyyHHmmss</maven.build.timestamp.format>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <distributionManagement>
         <repository>
