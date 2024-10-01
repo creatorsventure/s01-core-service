@@ -28,11 +28,6 @@ public class Menu extends GenericEntity implements Serializable {
     @NotBlank(message = "app.error.msg-1")
     @NotNull(message = "app.error.msg-2")
     @Column(unique = true)
-    private String menuName;
-
-    @NotBlank(message = "app.error.msg-1")
-    @NotNull(message = "app.error.msg-2")
-    @Column(unique = true)
     private String path;
 
     @NotBlank(message = "app.error.msg-1")
@@ -42,11 +37,15 @@ public class Menu extends GenericEntity implements Serializable {
 
     @NotNull(message = "app.error.msg-2")
     @Column
-    private Boolean isParent;
+    private Integer rootMenuId;
 
     @NotNull(message = "app.error.msg-2")
     @Column
-    private Integer order;
+    private Integer displayPosition;
+
+    @NotNull(message = "app.error.msg-2")
+    @Column
+    private Integer menuType;
 
     @Override
     public final boolean equals(Object o) {
