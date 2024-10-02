@@ -8,6 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.proxy.HibernateProxy;
+import org.springframework.data.redis.core.RedisHash;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -19,6 +20,7 @@ import java.util.Objects;
 @AllArgsConstructor
 @SuperBuilder
 @ToString(callSuper = true)
+@RedisHash
 @Entity
 public class Menu extends GenericEntity implements Serializable {
 
