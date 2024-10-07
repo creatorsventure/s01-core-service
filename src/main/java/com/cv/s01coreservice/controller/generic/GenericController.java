@@ -10,7 +10,7 @@ public interface GenericController<T> {
 
     ResponseEntity<Object> update(T dto, BindingResult result);
 
-    ResponseEntity<Object> updateStatus(T dto, BindingResult result);
+    ResponseEntity<Object> updateStatus(String id, boolean status);
 
     ResponseEntity<Object> readOne(String id);
 
