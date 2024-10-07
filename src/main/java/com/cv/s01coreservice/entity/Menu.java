@@ -25,25 +25,25 @@ public class Menu extends GenericEntity implements Serializable {
     @Serial
     private static final long serialVersionUID = 7400625511096934266L;
 
-    @NotBlank(message = "app.error.msg-1")
-    @NotNull(message = "app.error.msg-2")
+    @NotBlank(message = "app.message.failure.001")
+    @NotNull(message = "app.message.failure.002")
     @Column(unique = true)
     private String path;
 
-    @NotBlank(message = "app.error.msg-1")
-    @NotNull(message = "app.error.msg-2")
+    @NotBlank(message = "app.message.failure.001")
+    @NotNull(message = "app.message.failure.002")
     @Column
     private String icon;
 
-    @NotNull(message = "app.error.msg-2")
+    @NotNull(message = "app.message.failure.002")
     @Column
     private Integer rootMenuId;
 
-    @NotNull(message = "app.error.msg-2")
+    @NotNull(message = "app.message.failure.002")
     @Column
     private Integer displayPosition;
 
-    @NotNull(message = "app.error.msg-2")
+    @NotNull(message = "app.message.failure.002")
     @Column
     private Integer menuType;
 

@@ -24,8 +24,8 @@ public class UserDetail extends GenericEntity implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 3206343017993143643L;
-    @NotBlank(message = "app.error.msg-1")
-    @NotNull(message = "app.error.msg-2")
+    @NotBlank(message = "app.message.failure.001")
+    @NotNull(message = "app.message.failure.002")
     @Column(unique = true)
     private String email;
 
