@@ -14,10 +14,10 @@ public interface GenericController<T> {
 
     ResponseEntity<Object> readOne(String id);
 
-    ResponseEntity<Object> delete(String id);
-
     ResponseEntity<Object> readPage(PaginationDto dto);
 
     ResponseEntity<Object> readIdNameMapping(String id);
+
+    ResponseEntity<Object> delete(String id);
 
 }
